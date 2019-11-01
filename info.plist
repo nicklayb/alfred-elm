@@ -57,29 +57,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>8F739118-B225-455B-9B54-95EBB92F6874</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>63B48D8E-49EF-4F2B-85DB-BA9D1DDCE881</string>
-				<key>modifiers</key>
-				<integer>1048576</integer>
-				<key>modifiersubtext</key>
-				<string>Open core documentation</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>BD576C73-0CF5-459C-BBCB-53592F271812</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>A01CEDB6-6681-4BC0-AEE6-263B0CD573D3</key>
 		<array>
 			<dict>
@@ -116,11 +93,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>BD576C73-0CF5-459C-BBCB-53592F271812</key>
+		<key>BC4A8F86-468A-40E0-B268-1CC61420448B</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>A01CEDB6-6681-4BC0-AEE6-263B0CD573D3</string>
+				<string>7AF4B25B-1A2A-4850-BAAA-A1BF2D3CE882</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -146,57 +123,43 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>elmc</string>
+				<string>elmr</string>
 				<key>subtext</key>
-				<string>Press Enter to browse</string>
+				<string></string>
 				<key>text</key>
-				<string>Elm core documentation</string>
+				<string>Clear Elm's recent search</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>8F739118-B225-455B-9B54-95EBB92F6874</string>
+			<string>BC4A8F86-468A-40E0-B268-1CC61420448B</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node reset.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
 				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://package.elm-lang.org/packages/elm/core/latest</string>
-				<key>utf8</key>
-				<true/>
+				<key>type</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>63B48D8E-49EF-4F2B-85DB-BA9D1DDCE881</string>
+			<string>7AF4B25B-1A2A-4850-BAAA-A1BF2D3CE882</string>
 			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>variables</key>
-				<dict>
-					<key>package</key>
-					<string>elm/core/latest</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>BD576C73-0CF5-459C-BBCB-53592F271812</string>
-			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -281,6 +244,8 @@
 				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>keyword</key>
+				<string>elmc</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -467,13 +432,6 @@
 			<key>ypos</key>
 			<integer>225</integer>
 		</dict>
-		<key>63B48D8E-49EF-4F2B-85DB-BA9D1DDCE881</key>
-		<dict>
-			<key>xpos</key>
-			<integer>315</integer>
-			<key>ypos</key>
-			<integer>90</integer>
-		</dict>
 		<key>753C2613-62F3-4BC2-B5C5-F4E5E5434E17</key>
 		<dict>
 			<key>xpos</key>
@@ -481,10 +439,10 @@
 			<key>ypos</key>
 			<integer>345</integer>
 		</dict>
-		<key>8F739118-B225-455B-9B54-95EBB92F6874</key>
+		<key>7AF4B25B-1A2A-4850-BAAA-A1BF2D3CE882</key>
 		<dict>
 			<key>xpos</key>
-			<integer>40</integer>
+			<integer>215</integer>
 			<key>ypos</key>
 			<integer>90</integer>
 		</dict>
@@ -502,12 +460,12 @@
 			<key>ypos</key>
 			<integer>255</integer>
 		</dict>
-		<key>BD576C73-0CF5-459C-BBCB-53592F271812</key>
+		<key>BC4A8F86-468A-40E0-B268-1CC61420448B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>40</integer>
 			<key>ypos</key>
-			<integer>160</integer>
+			<integer>90</integer>
 		</dict>
 		<key>C4CA9754-3374-45F6-BE9C-43C120FE2727</key>
 		<dict>

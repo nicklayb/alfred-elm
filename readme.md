@@ -18,12 +18,13 @@ $ npm i -g alfred-elm
 
 ### `elmc`
 
-- On **Enter** press: Browse `elm/core` modules
-- On **Cmd+Enter** press: Open Elm core package documentation page URL
+Same as `elm` but with `elm/core` package pre-selected
 
 ### `elm`
 
 Browse Elm packages, find a package by typing the name.
+
+If you recently browse packages, these are shown by default instead of all the packages
 
 - On **Enter** press: Browse the selected package modules
 - On **Cmd+Enter** press: Open package documentation page URL
@@ -36,6 +37,11 @@ Browse Elm packages, find a package by typing the name.
 ### Browsing functions
 
 - On **Enter** press: Open function documentation page URL
+
+
+## Recents
+
+By default, everytime you lookup a package, these are cached so you can quickly come back later on by simply typing `elm`. You can clear this cache by running `elmr`.
 
 ## License
 

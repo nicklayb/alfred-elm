@@ -1,11 +1,20 @@
 const alfy = require('alfy');
-const Package = require('./elm/package')
-const Module = require('./elm/module')
+const Package = require('./elm/package');
+const Recents = require('./recents');
 
-const packages = await Package.all()
+const recents = Recents.get();
 
-const items = alfy
-  .inputMatches(packages, 'name')
-  .map(Package.mapToAlfy);
+if (alfy.input.length > 0 || recents.length == 0) {
+  const packages = await Package.all();
 
-alfy.output(items)
+  const items = alfy
+    .inputMatches(packages, 'name')
+    .map(Package.mapToAlfy);
+
+  alfy.output(items);
+} else {
+  alfy.output(recents.map(Package.mapRecentToAlfy))
+}
+
+
+
