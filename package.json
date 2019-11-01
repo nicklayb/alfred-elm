@@ -1,6 +1,6 @@
 {
   "name": "alfred-elm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Alfred workflow to browse Elm's documentation",
   "license": "MIT",
   "repository": "nicklayb/alfred-elm",
@@ -16,11 +16,6 @@
     "postinstall": "alfy-init",
     "preuninstall": "alfy-cleanup"
   },
-  "files": [
-    "index.js",
-    "icon.png",
-    "info.plist"
-  ],
   "keywords": [
     "alfred",
     "workflow",
