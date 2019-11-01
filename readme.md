@@ -1,12 +1,14 @@
-# alfred-elm [![Build Status](https://travis-ci.org/nicklayb/alfred-elm.svg?branch=master)](https://travis-ci.org/nicklayb/alfred-elm)
+# alfred-elm
 
-> Alfred workflow to browse Elm&#39;s documentation
+> Alfred workflow to browse Elm's documentation
+
+![alt text](demo.gif)
 
 
 ## Install
 
 ```
-$ npm install --global alfred-elm
+$ npm i -g alfred-elm
 ```
 
 *Requires [Node.js](https://nodejs.org) 4+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
@@ -14,8 +16,26 @@ $ npm install --global alfred-elm
 
 ## Usage
 
-In Alfred, type `elm`, <kbd>Enter</kbd>, and your query.
+### `elmc`
 
+- On **Enter** press: Browse `elm/core` modules
+- On **Cmd+Enter** press: Open Elm core package documentation page URL
+
+### `elm`
+
+Browse Elm packages, find a package by typing the name.
+
+- On **Enter** press: Browse the selected package modules
+- On **Cmd+Enter** press: Open package documentation page URL
+
+### Browsing modules
+
+- On **Enter** press: Browse selected module functions
+- On **Cmd+Enter** press: Open module documentation page URL
+
+### Browsing functions
+
+- On **Enter** press: Open function documentation page URL
 
 ## License
 
